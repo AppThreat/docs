@@ -1,0 +1,92 @@
+site_name: AppThreat docs
+site_url: https://appthreat.io/en/latest/
+site_author: Team AppThreat
+site_description: >-
+  AppThreat is a free open-source security audit tool for modern DevOps teams. With an integrated multi-scanner based design, Scan can detect various kinds of security flaws in your application and infrastructure code in a single fast scan without the need for any remote server! The product supports a range of integration options: from scanning every push via a git hook to scanning every build and pull-request in the CI/CD pipelines.
+# Repository
+repo_name: docs
+repo_url: https://github.com/AppThreat/docs
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; Team AppThreat
+theme:
+  features:
+    - header.autohide
+    - search.highlight
+    - navigation.expand
+    - instant
+    - tabs
+  name: material
+  font:
+    text: Muli, "Work Sans"
+    code: "Fira Mono"
+  logo: images/scan-dark.png
+  favicon: images/favicon.ico
+  palette:
+    scheme: scan
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/7WvSxdK
+    - icon: fontawesome/brands/github
+      link: http://github.com/ShiftLeftSecurity/sast-scan
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_prbh
+
+plugins:
+  - search:
+      prebuild_index: true
+  - minify:
+      minify_html: true
+  - git-revision-date-localized
+
+nav:
+  - "index.md"
+  - "Getting started": "getting-started/README.md"
+  - "Use Cases": "getting-started/use-cases.md"
+  - "Zen of Scan": "getting-started/zen-of-scan.md"
+  - "CI/CD Integrations":
+      - "Introduction": "integrations/README.md"
+      - "Azure DevOps Pipelines": "integrations/azure-devops-pipeline.md"
+      - "Bitbucket Pipelines": "integrations/bitbucket.md"
+      - "Github Actions": "integrations/github-actions.md"
+      - "Github Code scanning": "integrations/code-scan.md"
+      - "GitLab CI": "integrations/gitlab.md"
+      - "D2iQ Dispatch": "integrations/dispatch.md"
+      - "Google CloudBuild": "integrations/google-cloudbuild.md"
+      - "Circle CI": "integrations/circleci.md"
+      - "Jenkins": "integrations/jenkins.md"
+      - "Travis CI": "integrations/travis.md"
+      - "TeamCity": "integrations/teamcity.md"
+      - "Telemetry": "integrations/telemetry.md"
+      - "Tips & Tricks": "integrations/tips.md"
+      - "SARIF Reports": "integrations/sarif.md"
+      - "SBOM Reports": "integrations/sbom.md"
+  - "IDE Integration": "integrations/vscode.md"
+  - "Secure Development":
+      - "Introduction": "secure-development/README.md"
+      - "OWASP Top 10": "secure-development/owasp.md"
+      - "Python": "secure-development/python.md"
+      - "Go": "secure-development/go.md"
+      - "Java": "secure-development/java.md"
+  - "Secure Deployment":
+      - "Introduction": "secure-deployment/README.md"
+      - "AWS CloudFormation": "secure-deployment/aws.md"
+      - "Kubernetes": "secure-deployment/k8s.md"
+      - "Terraform": "secure-deployment/terraform.md"
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.details
+
+extra_css:
+  - css/custom.css
