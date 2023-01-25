@@ -145,7 +145,7 @@ import (
     "net/http"
 )
 
-var url string = "https://www.appthreat.io"
+var url string = "https://www.appthreat.com"
 
 func main() {
 

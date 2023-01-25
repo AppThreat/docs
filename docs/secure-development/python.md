@@ -323,7 +323,7 @@ Although the title of this guideline calls out HTTPS, verifying the identity of 
 
 ```python
 import requests
-requests.get('https://www.appthreat.io/', verify=False)
+requests.get('https://www.appthreat.com/', verify=False)
 ```
 
 The example above uses `verify=False` to bypass the check of the certificate received against those in the CA trust store.
@@ -334,7 +334,7 @@ It is important to note that modules such as httplib within the Python standard 
 
 ```python
 import requests
-requests.get('https://www.appthreat.io/', verify=CONF.ca_file)
+requests.get('https://www.appthreat.com/', verify=CONF.ca_file)
 ```
 
 The example above uses the variable CONF.ca_file to store the location of the CA trust store, which is used to confirm that the certificate received is from a trusted authority.
