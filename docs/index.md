@@ -129,4 +129,4 @@ Full list of supported languages is as follows:
 
 ## Support
 
-Developers behind scan are available on a dedicated [discord channel](https://discord.gg/7WvSxdK) for questions and support. For defects, raising an issue on [GitHub](https://github.com/ShiftLeftSecurity/sast-scan/issues) is best.
+Developers behind scan are available on a dedicated [discord channel](https://discord.gg/DCNxzaeUpd) for questions and support. For defects, raising an issue on [GitHub](https://github.com/ShiftLeftSecurity/sast-scan/issues) is best.

@@ -28,7 +28,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/7WvSxdK
+      link: https://discord.gg/DCNxzaeUpd
     - icon: fontawesome/brands/github
       link: http://github.com/ShiftLeftSecurity/sast-scan
     - icon: fontawesome/brands/twitter
