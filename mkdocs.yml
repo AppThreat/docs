@@ -30,7 +30,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/DCNxzaeUpd
     - icon: fontawesome/brands/github
-      link: http://github.com/ShiftLeftSecurity/sast-scan
+      link: http://github.com/AppThreat
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/_prbh
 
